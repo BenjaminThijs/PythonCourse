@@ -95,15 +95,21 @@ Up until now we have only seen `print` get called using a value (a string), but 
 print(some_string)
 ```
 \
-All of this put together gives us (see [the example](PrintString.py))
+All of this put together gives us
 ```python
 some_string = "Some text"
 
 print(some_string)
 ```
-\
+This code can be found in [this example](PrintString.py) \
 Something to note here is the empty line of code, which is simply there to make our code more readable. \
-An empty line of code will just get skipped by your computer when running the code.
+An empty line of code will just get skipped by your computer when running the code. \
+**Output** \
+![alt text](Resources/PrintStringOutput.png "Print string output")
+
+### Numbers
+
+
 
 ## Exercises
 ### Exercise 1
