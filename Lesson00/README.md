@@ -56,4 +56,6 @@ Once we are in the correct location type `python main.py` in your terminal (*NOT
 \
 As you can see, the line `You were able to run a python script from the cli!` got printed to the screen. \
 Not too exciting, but we now know how to run Python code that is inside a file. \
-In the next lesson, we will begin creating our own Python code in a file.
+In the next lesson, we will begin creating our own Python code in a file. \
+\
+[Next Lesson](../Lesson01)
