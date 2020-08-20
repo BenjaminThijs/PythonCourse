@@ -12,7 +12,7 @@ This repository will contain all the exercises per lesson.
 
 First of all, you need an account on github, but since this course is posted on github, I will assume you already have this. \
 Next, you need to create a new repo on github. \
- - TODO: explain how to do this?
+ - TODO: explain how to do this? \
 \
 Clone this new repository to your computer. \
 Per lesson you will create a new folder, by the same name as the lesson you are currently taking. (`Lesson01` in this case) \
@@ -40,7 +40,13 @@ As seen in the [script from last lesson](../Lesson00/main.py) some text was show
 Text in most programming languages, including Python, is encased in quotation marks (`"`). \
 So in order to print another message, all you would need to do is change what is between those quotation marks. \
 **Example** \
-
+![alt text](Resources/PrintExample.png "Print example")
+\
+We can also add multiple print statements in a row. \
+**Code** \
+![alt text](Resources/MultiplePrints.png "Printing multiple times")
+**Output** \
+![alt text](Resources/MultiplePrintsOutput.png "Output from printing multiple times")
 
 ## Exercises
 ### Exercise 1
