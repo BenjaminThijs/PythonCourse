@@ -12,8 +12,9 @@ This repository will contain all the exercises per lesson.
 
 First of all, you need an account on github, but since this course is posted on github, I will assume you already have this. \
 Next, you need to create a new repo on github. \
- - TODO: explain how to do this? \
-\
+
+ - TODO: explain how to do this?
+
 Clone this new repository to your computer. \
 Per lesson you will create a new folder, by the same name as the lesson you are currently taking. (`Lesson01` in this case) \
 This folder will then contain a folder for each exercise in this lesson. (`Exercise 1` for example) \
@@ -47,6 +48,21 @@ We can also add multiple print statements in a row. \
 ![alt text](Resources/MultiplePrints.png "Printing multiple times")
 **Output** \
 ![alt text](Resources/MultiplePrintsOutput.png "Output from printing multiple times")
+\
+A few new things got introduced here. \
+The `print` statement not only shows a message to the user, but also makes sure the next output is shown a line lower. \
+This causes the second print message to show it's message on the line below the first one. \
+\
+Another new thing is an empty `print` statement (line 3). \
+If `print` is called without anything to print, it will print an empty line. \
+\
+A third thing is comments, comments are text that the programmer can see, but the program ignores them. \
+A comment in Python looks like this \
+```python
+# Comment
+```
+Anything written after the `#` symbol will be treated as simply text by your computer, and will thus do nothing in your program. \
+This is a good way to write down what a piece of code does, so you or anyone else can know without having to read the actual code.
 
 ## Exercises
 ### Exercise 1
