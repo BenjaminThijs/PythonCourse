@@ -45,7 +45,7 @@ So in order to print another message, all you would need to do is change what is
 \
 We can also add multiple print statements in a row. \
 **Code** \
-![alt text](Resources/MultiplePrints.png "Printing multiple times")
+![alt text](Resources/MultiplePrints.png "Printing multiple times") \
 **Output** \
 ![alt text](Resources/MultiplePrintsOutput.png "Output from printing multiple times")
 \
@@ -57,12 +57,53 @@ Another new thing is an empty `print` statement (line 3). \
 If `print` is called without anything to print, it will print an empty line. \
 \
 A third thing is comments, comments are text that the programmer can see, but the program ignores them. \
-A comment in Python looks like this \
+A comment in Python looks like this:
 ```python
 # Comment
 ```
 Anything written after the `#` symbol will be treated as simply text by your computer, and will thus do nothing in your program. \
 This is a good way to write down what a piece of code does, so you or anyone else can know without having to read the actual code.
+
+## Variables
+
+A variable is a way of saving a value. \
+This sounds quite abstract but will become clearer soon. \
+A variable can contain a large amount of different values, for now we will take a look at some of the more basic ones.
+
+### Strings
+
+We have already seen `strings` even though they were never named as such. \
+A `string` looks like this:
+```python
+"Some text"
+```
+\
+A `string` can contain different character, usually: letters, numbers, spaces, ... \
+\
+A `string` is not a variable, it is a value. \
+A variable is some name which is linked to a certain value. \
+**Code**
+```python
+some_string = "Some text"
+```
+\
+As seen before, we can display a string using the `print` statement. \
+Up until now we have only seen `print` get called using a value (a string), but it can also be used with a variable. \
+
+**Code**
+```python
+print(some_string)
+```
+\
+All of this put together gives us (see [the example](PrintString.py))
+```python
+some_string = "Some text"
+
+print(some_string)
+```
+\
+Something to note here is the empty line of code, which is simply there to make our code more readable. \
+An empty line of code will just get skipped by your computer when running the code.
 
 ## Exercises
 ### Exercise 1
