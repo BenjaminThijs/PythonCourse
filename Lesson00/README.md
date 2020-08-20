@@ -25,8 +25,8 @@ If the installation of Python went well, you should be able to open a terminal a
 Once a terminal window is open, simply type `python`. \
 It should look like this. (example is on Linux) \
 \
-**New terminal**
+**New terminal** \
 ![alt text](Resources/EmptyTerminal.png "Empty Terminal")
 
-**Python comand**
+**Python comand** \
 ![alt text](Resources/PythonTerminal.png "Python Terminal")
