@@ -15,7 +15,7 @@ During the installation an option will be presented to do this for you. \
  - TODO: Add picture of option here?
 If an issue arises during the installation, then this is the perfect time to brush up your googling skills :)
 
-# Using Python
+# Python terminal
 
 If the installation of Python went well, you should be able to open a terminal and call Python. \
 **On Windows** You can open the start-menu (windows key on the keyboard) and type `cmd`. \
@@ -30,3 +30,30 @@ It should look like this. (example is on Linux) \
 
 **Python comand** \
 ![alt text](Resources/PythonTerminal.png "Python Terminal")
+\
+Once we have the Python terminal open, we can start writing Python code directly in the terminal. \
+This is however mostly for testing small things, since you're not actually writing it in a file. \
+We are not actually going to use the python terminal in this course. \
+\
+To exit this Python terminal and go back to the normal terminal type `exit()` and press enter.
+
+## Running Python code
+
+In order to execute code we can write it directly in the Python terminal, or we can write it in a file. \
+But once we have code in a file, we need to do a bit of extra work to actually run the code. \
+For this lesson, I have prepared a file that we will run. \
+\
+To run this file, make sure you are in the correct directry. \
+\
+**On Windows and Linux** \
+type `cd <the location where you cloned this repository>`, this will take you to the repository folder. \
+Then enter the directory for lesson00 by typing `cd Lesson00`. \
+\
+**On Mac** Google may know what to do. \
+\
+Once we are in the correct location type `python main.py` in your terminal (*NOTE* I'm talking about the normal terminal). \
+![alt text](Resources/RunMain.png "Running our first script")
+\
+As you can see, the line `You were able to run a python script from the cli!` got printed to the screen. \
+Not too exciting, but we now know how to run Python code that is inside a file. \
+In the next lesson, we will begin creating our own Python code in a file.

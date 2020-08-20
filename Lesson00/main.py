@@ -1,0 +1,1 @@
+print("You were able to run a python script from the cli!")
