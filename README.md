@@ -12,4 +12,4 @@ Or else, you can pick one of the courses as you see fit. \
 | Lesson | Description |
 |--------|-------------|
 |[00](Lesson00/)| Installing python and running our first script |
-|[01](Lesson01/)| Writing our first python script (basic variables) |
+|[01](Lesson01/)| Writing our first python script (and using basic variables) |
