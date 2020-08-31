@@ -95,7 +95,7 @@ So just remember, if you want to create a new variable, make sure the name is no
 As we saw before, there are a number of different values that can be stored in a variable. \
 For now we will only focus on two of the simpler ones, numbers and strings.
 
-#### Numbers
+### Numbers
 
 Numbers are quite self explanatory, a number is a number. \
 A number can be positive, negative and contain a comma. \
@@ -157,7 +157,7 @@ We would expect the value `19.4` to be printed, however what we actually see is 
 The reason for this has to do with how values are stored in memory. \
 Usually this does not create an issue, but it is something to keep in mind.
 
-#### Strings
+### Strings
 
 We have already seen strings a few times in examples now, they look like this `"Some text"`. \
 A string is text, although it can also contain numbers, symbols, and even some more exotic symbols like smileys. \
@@ -212,5 +212,5 @@ As you can see in the output (the comments), `print` actually printed 2 lines in
 This is thanks to the `\n` character. Which basically means to put an `enter` there, so everything after it will be on a new line. \
 This can be very handy if you have a very long string, but want to show it to the user in multiple lines. \
 \
-[Exercises](Exercises.md)
+[Exercises](Exercises.md) \
 [Next lesson](../Lesson02)

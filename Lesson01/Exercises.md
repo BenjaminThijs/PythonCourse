@@ -14,7 +14,7 @@ Paste this code inside and run the code. \
 print("You made your very first script!!!")
 ```
 
-<details><summary>Hint</summary>
+<details><summary><b>Hint</b></summary>
 
 Make sure you are in the correct directory. \
 Use `cd <directory>` to move to a directory. \
@@ -22,9 +22,9 @@ You can sue `cd ..` to go one directory up.
 
 </details>
 
-<details><summary>Answer</summary>
+<details><summary><b>Answer</b></summary>
 
-Make sure you are in the correct directory (see hint).
+Make sure you are in the correct directory (see hint). \
 Run `python <your script name>.py`.
 
 </details>
