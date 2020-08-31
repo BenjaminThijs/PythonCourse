@@ -103,12 +103,12 @@ Both the `and` and `or` operator are quite obvious, but to show what they do I w
 A truth table is a way of determening what the value is going to be when using these operators. \
 
 **and**
-||**True**|**False**|
+|-|**True**|**False**|
 |**True**|True|False|
 |**False**|False|False|
 
 **or**
-||**True**|**False**|
+|-|**True**|**False**|
 |**True**|True|True|
 |**False**|True|False|
 
