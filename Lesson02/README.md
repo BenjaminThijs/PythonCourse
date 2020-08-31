@@ -130,3 +130,6 @@ To figure out what the endresult will be we imagina a vertical line running thro
 And we imagine a horizontal line through the **False** all the way to the left. \
 The point where they cross tells us what the result will be. \
 ![Truth table image](Resources/TruthTable.png)
+As you can see, the result is `True`.\
+\
+In the case of `not`, whatever the value was, it simply gets reversed.
