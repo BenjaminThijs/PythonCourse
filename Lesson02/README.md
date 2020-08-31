@@ -95,20 +95,23 @@ If either one of them is `False` then the entire thing will be `False`. \
 These are all the boolean operators currently available in Python:
 
 |Name & symbol|
+|-|
 |and|
 |or|
 |not|
 
 Both the `and` and `or` operator are quite obvious, but to show what they do I will show their `truth tables`. \
-A truth table is a way of determening what the value is going to be when using these operators. \
+A truth table is a way of determening what the value is going to be when using these operators.
 
 **and**
-|-|**True**|**False**|
+||True|False|
+|-|-|-|
 |**True**|True|False|
 |**False**|False|False|
 
 **or**
-|-|**True**|**False**|
+||True|False|
+|-|-|-|
 |**True**|True|True|
 |**False**|True|False|
 
@@ -116,3 +119,14 @@ A truth table is a way of determening what the value is going to be when using t
 |**True**|**False**|
 |-|-|
 |False|True|
+
+The values in **bold** are the values that we are using together with the operator. \
+The result is the value which can be found where the initial values cross. \
+Which is a very vague and confusing explanation, but it is really quite simple. \
+\
+Let's say we want to know what happens when we do `True or False`, we look at the truth table for `or`. \
+We look at the **True** in the first row, and the **False** in the last row. \
+To figure out what the endresult will be we imagina a vertical line running through the **True** all the way down. \
+And we imagine a horizontal line through the **False** all the way to the left. \
+The point where they cross tells us what the result will be. \
+![Truth table image](Resources/TruthTable.png)

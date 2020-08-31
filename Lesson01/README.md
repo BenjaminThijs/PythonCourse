@@ -34,7 +34,7 @@ In [Lesson00](../Lesson00/) we ran a script called `main.py`, this script showed
 Now we will learn how to do this ourselves. \
 \
 If you were to open up the [script from last lesson](../Lesson00/main.py), you can see what the code looks like. \
-![alt text](Resources/Lesson00Script.png "Lesson00 main script")
+![Lesson00 main script](Resources/Lesson00Script.png)
 \
 As you can see, it is only one line of code. \
 A `print` is called, this `print` name is what is called a `method`. \
@@ -46,13 +46,13 @@ As seen in the [script from last lesson](../Lesson00/main.py) some text was show
 Text in most programming languages, including Python, is encased in quotation marks (`"`). \
 So in order to print another message, all you would need to do is change what is between those quotation marks. \
 **Example** \
-![alt text](Resources/PrintExample.png "Print example")
+![Print example](Resources/PrintExample.png)
 \
 We can also add multiple print statements in a row. \
 **Code** \
-![alt text](Resources/MultiplePrints.png "Printing multiple times") \
+![Printing multiple times](Resources/MultiplePrints.png) \
 **Output** \
-![alt text](Resources/MultiplePrintsOutput.png "Output from printing multiple times")
+![Output from printing multiple times](Resources/MultiplePrintsOutput.png)
 \
 A few new things got introduced here. \
 The `print` statement not only shows a message to the user, but also makes sure the next output is shown a line lower. \

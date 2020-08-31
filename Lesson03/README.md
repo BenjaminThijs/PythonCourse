@@ -50,7 +50,7 @@ days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sun
 print(days)
 ```
 The output would look like this. \
-![alt text](Resources/PrintingList.png "Printing a list directly")
+![Printing a list directly](Resources/PrintingList.png)
 
 # Loops
 
@@ -103,7 +103,7 @@ As I mentioned though, consistency is required, so you can't just indent one lin
 If you try to do this, Python will throw an `IndentationError` and your code will not work. \
 \
 Finally, after all of this explaining, this is what the output from our code would look like. \
-![alt text](Resources/PrintingListForLoop.png "Printing each value in a list")
+![Printing each value in a list](Resources/PrintingListForLoop.png)
 
 ### Range
 
