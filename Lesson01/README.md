@@ -10,6 +10,7 @@ Most programming languages today make use of the `;` symbol to let the compiler 
 Python does not require this however. Instead Python just reads to the end of a line. \
 \
 Another big difference is indentation, where most languages don't require your code to be indented. \
+Instead these languages rely on grouping code into codeblocks through the use of curly brackets. \
 Python however does require this, and will crash if you do not follow the rules. \
 \
 The specifics of this are not yet important, and will be handled later. \
