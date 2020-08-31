@@ -21,8 +21,7 @@ name = input("Please enter your name: ")
 ```
 A few things to take away from this:
  - anything the user types will be stored inside a string, so the type of our variable `name` will be a string, even when the user only enters a number
- - when entering a message to show to the user (`"Please enter your name: "`) notice how I left a space after the `:` symbol. This is because the user will be typing something directly behind this message, and if we don't provide the empty space, it will look messy for the user. (but this is not required, just a preference)
-\
+ - when entering a message to show to the user (`"Please enter your name: "`) notice how I left a space after the `:` symbol. This is because the user will be typing something directly behind this message, and if we don't provide the empty space, it will look messy for the user. (but this is not required, just a preference) \
 This code will work for our name, since our name needs to be a string, and input provides us with a string. \
 However, once we require the user to enter his age, this won't do what we want it to do. \
 The age will also be a string, but we want it to be a number. \
@@ -104,16 +103,14 @@ Both the `and` and `or` operator are quite obvious, but to show what they do I w
 A truth table is a way of determening what the value is going to be when using these operators. \
 
 **and**
-|||**True**|**False**|
-|||-|-|
-|**True**|-|True|False|
-|**False**|-|False|False|
+||**True**|**False**|
+|**True**|True|False|
+|**False**|False|False|
 
 **or**
-|||**True**|**False**|
-|||-|-|
-|**True**|-|True|True|
-|**False**|-|True|False|
+||**True**|**False**|
+|**True**|True|True|
+|**False**|True|False|
 
 **not**
 |**True**|**False**|
