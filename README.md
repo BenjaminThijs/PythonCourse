@@ -6,7 +6,7 @@ This repository will contain a full course in Python.
 
 To get started in this course, you need to clone this repository. \
 If you want to complete the entire course, you should start at [the beginning](Lesson00/) \
-Or else, you can pick one of the courses as you see fit. \
+Or else, you can pick one of the courses as you see fit.
 
 
 | Lesson | Description |
