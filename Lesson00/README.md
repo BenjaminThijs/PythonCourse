@@ -58,6 +58,13 @@ Once we are in the correct location type `python main.py` in your terminal (*NOT
 \
 As you can see, the line `You were able to run a python script from the cli!` got printed to the screen. \
 Not too exciting, but we now know how to run Python code that is inside a file. \
-In the next lesson, we will begin creating our own Python code in a file. \
+In the next lesson, we will begin creating our own Python code in a file.
+
+## Exercises
+
+The only exercise in this lesson is to try and run the `main.py` file from the terminal. \
+\
+In the following courses, the exercises will be listed in a seperate file. This is to allow you to try them without looking at the lesson. \
+This should encourage you to try them without looking first, and only if you are stuck to go look back at the lesson. \
 \
 [Next Lesson](../Lesson01)
