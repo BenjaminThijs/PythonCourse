@@ -4,6 +4,29 @@ To make a python script, you need to simply create a file with the `.py` extensi
 This script can then be edited using any text editor. \
 To run the file, as seen before we call `python <script>.py`.
 
+## Indentation
+
+Most programming languages today make use of the `;` symbol to let the compiler know the line of code has reached it's end. \
+Python does not require this however. Instead Python just reads to the end of a line. \
+\
+Another big difference is indentation, where most languages don't require your code to be indented. \
+Python however does require this, and will crash if you do not follow the rules. \
+\
+The specifics of this are not yet important, and will be handled later. \
+The reason I am still mentioning it is because a simple space may crash your program, even if your program is only a few lines of code. \
+What you need to know for now is that your code should not contain any spaces before the actual code. \
+What I mean by that is this. \
+```python
+# Good line of code
+my_name = "Jeff"
+
+# Bad line of code
+  my_name = "Also Jeff"
+```
+so for now, just make sure your code is always all the way to the left. \
+\
+If you ever run python code, and you see an `IndentationError`, that means you messed up, and put some spaces where they didn't belong.
+
 ## Printing messages
 
 In [Lesson00](../Lesson00/) we ran a script called `main.py`, this script showed a message to the user. \
