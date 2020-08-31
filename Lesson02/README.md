@@ -215,7 +215,7 @@ if age >= 13:
 else:
     print("You are a child")
 ```
-![Output from above code](Resource/WhyElif.png) \
+![Output from above code](Resources/WhyElif.png) \
 2 lines got printed instead of 1, why is this? \
 As we saw with `if-else`-statements (so where we only used `if` followed by an `else`), only one of the two codeblocks ever executed. \
 The reason for this is because they are linked, do only one of them can ever run. \
