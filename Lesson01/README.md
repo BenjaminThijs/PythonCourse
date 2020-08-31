@@ -2,26 +2,7 @@
 
 To make a python script, you need to simply create a file with the `.py` extension. \
 This script can then be edited using any text editor. \
-To run the file, as seen before we call `python <script>.py`. \
-\
-The script file can be created anywhere, for this course we will create a new repository on github. \
-This repository will contain all the exercises per lesson.
-
-
-## Creating a repo on github
-
-First of all, you need an account on github, but since this course is posted on github, I will assume you already have this. \
-Next, you need to create a new repo on github. \
-
- - TODO: explain how to do this?
-
-Clone this new repository to your computer. \
-Per lesson you will create a new folder, by the same name as the lesson you are currently taking. (`Lesson01` in this case) \
-This folder will then contain a folder for each exercise in this lesson. (`Exercise 1` for example) \
-These exercise folders will then contain the actual exercises. \
-\
-Exercises will be listed on the bottom of each README file per lesson. \
-Any other examples given will also be included in the repo, this includes scripts shown through screenshots.
+To run the file, as seen before we call `python <script>.py`.
 
 ## Printing messages
 
@@ -66,53 +47,170 @@ This is a good way to write down what a piece of code does, so you or anyone els
 
 ## Variables
 
-A variable is a way of saving a value. \
-This sounds quite abstract but will become clearer soon. \
-A variable can contain a large amount of different values, for now we will take a look at some of the more basic ones.
-
-### Strings
-
-We have already seen `strings` even though they were never named as such. \
-A `string` looks like this:
+A variable is a way of saving a value by linking it to a name. \
+We basically decide on an own name for our variable, and then give it a value. \
+Some examples of what this may look like in code:
 ```python
-"Some text"
+number = 12
+string = "Hello"
+boolean = True
+list_of_numbers = [1, 3, 5, 1, 12, 15, 3]
+dictionary = {"first name": "John", "last name": "Smith", "age": 24}
+person = Person(first="Jane", last="Doe", age=26)
 ```
 \
-A `string` can contain different character, usually: letters, numbers, spaces, ... \
+As you can see, a variable can have any name you want, although there are some restrictions. \
+ - A variable name must start with a letter or underscore
+ - A varable name cannot start with a number
+ - A varable name can only contain letters, numbers, and underscores
+ - Variable names are case-sensitive, meaning that `age` and `Age` are two different names
+ - Spaces can not be used in a variable name, so `first name` would not be a valid variable name but `first_name` would be
 \
-A `string` is not a variable, it is a value. \
-A variable is some name which is linked to a certain value. \
-**Code**
+Most programming languages have their own set of guidelines to follow when writing code, and Python is no different. \
+However, these guidelines are not enforced, and thus do not HAVE to be followed. \
+ - A variable name does not start with a capital letter (this rule has an exception but is not important yet)
+ - If your variable name is made up of different words, you put an underscores between each word (`first_name`)
+ - Attempt to prevent the use of numbers in your naming (although this rule is quite unspoken)
+ - Your name should give a description of the value it will contain (so, try to prevent using variables that are just one letter)
+
+### Values
+
+The reason we put a value into a variable is so we can use it again later in code. \
+**Example**
 ```python
-some_string = "Some text"
+welcome_message = "Hello there, welcome!"
+
+print(welcome_message)
 ```
 \
-As seen before, we can display a string using the `print` statement. \
-Up until now we have only seen `print` get called using a value (a string), but it can also be used with a variable. \
-
-**Code**
+Ofcourse, in the example shown it is quite unnecessary to use a variable, since we only print it. But it serves to show how the variable can be used. \
+Something to keep in mind is that a variable can be overwritten, for example. \
 ```python
-print(some_string)
+some_string = "Text"
+some_string = "Different text"
+```
+In this case, only one variable is created (`some_string`), we assign a value to it ("Text") and then overwrite it by assigning a different value ("Different text"). \
+So just remember, if you want to create a new variable, make sure the name is not already in use. Otherwise you might be changing values that you did not wish to change. \
+\
+As we saw before, there are a number of different values that can be stored in a variable. \
+For now we will only focus on two of the simpler ones, numbers and strings.
+
+#### Numbers
+
+Numbers are quite self explanatory, a number is a number. \
+A number can be positive, negative and contain a comma. \
+```python
+number_one = 5
+number_two = 7.5
+number_three = 1e52
+number_four = -46.15
+```
+These values can also be shown to the user through `print`, this will just show the value in the terminal. \
+```python
+number = 15.3
+
+print(number)
 ```
 \
-All of this put together gives us
+Ofcourse, simply storing numbers is no fun. But as you might have guessed, we can use some arithmetic to make things more interesting. \
+Let's look at what Python provides in the way of arithmetic first. \
+ - Addition (+)
+ - Subtraction (-)
+ - Multiplication (*)
+ - Division (/)
+ - Modulus (%)
+ - Exponent (**)
+ - Floor division (//)
+\
+So, we have a few options, for now we will only be looking at the four basic operations since they are most used. \
+Addition, subtraction, multiplication and division should be simple, but here are some examples of how to use them in code. \
 ```python
-some_string = "Some text"
-
-print(some_string)
+number_one = 15 + 3  # 18
+number_two = number_one - 5.2  # 12.8
+number_three = number_two / 2  # 6.4
+number_four = number_three + 5  # 11.4
 ```
-This code can be found in [this example](PrintString.py) \
-Something to note here is the empty line of code, which is simply there to make our code more readable. \
-An empty line of code will just get skipped by your computer when running the code. \
-**Output** \
-![alt text](Resources/PrintStringOutput.png "Print string output")
+As you can see, I am reussing the other variables to chain operations together. \
+This way, we can store the intermediate values should we need them. However, let's say we are only interested in the end result. \
+So we only want the value stored in `number_four`, this means the other values don't need to be stored in variables. \
+We can create this chain in one line, which would look like this. \
+```python
+number = (((15 + 3) - 5.2) / 2) + 5  # 11.4
+```
+Right now, I have put extra brackets in there to show how they are still the same operations as before. \
+But most of these are not required, since Python follows the basic rules of order of operations. \
+If I were to remove the unneeded ones, it would look like this. \
+```python
+number = (15 + 3 - 5.2) / 2 + 5  # 11.4
+```
+However, this way of writing it seems to cause confusion for some people, so if you feel more comfortable with more brackets, to make sure everything happens in the correct order then you can do so. \
+Otherwise your math might end up on Facebook with people arguing over the `correct` answer. \
+\
+Sometimes you might notice that the value you expected is not exactly what Python gives. \
+For example, if we were to run the following code. \
+```python
+number = 19.2 + 0.1 + 0.1  # 19.4
 
-### Numbers
+print(number)
+```
+We would expect the value `19.4` to be printed, however what we actually see is `19.400000000000002` \
+The reason for this has to do with how values are stored in memory. \
+Usually this does not create an issue, but it is something to keep in mind.
 
+#### Strings
 
+We have already seen strings a few times in examples now, they look like this `"Some text"`. \
+A string is text, although it can also contain numbers, symbols, and even some more exotic symbols like smileys. \
+For now, we will simply keep it to text, numbers and symbols though. \
+\
+Storing a string in a variable can look like this \
+```python
+text = "Some text"
+```
+As mentioned before, there is not much that can't be part of a string, although some more complex symbols may need to be encoded. \
+But that is not important right now, so we will ignore it like it's a pile of dirty clothes sitting on a chair. \
+\
+As we have seen before, strings can be shown to the user through `print`. \
+```python
+hello = "Hello!"
 
-## Exercises
-### Exercise 1
+print(hello)
+```
+\
+We can also combine strings in a few ways. \
+The simplest is to simply concatenate them, meaning to put one after the other. \
+```python
+first_name = "Jeff"
+last_name = "Dunham"
+full_name = first_name + " " + last_name
 
-Create a Python script called `Exercise1.py` and open it. \
+print(full_name)  # Jeff Dunham
+```
+To concatenate strings, we can just use the `+` operator, like we did with numbers. \
+But we can also make use of string formatting if we have more things that need to be combined in a more complex way. \
+This formatting can be done in a few ways, we will be looking at the newest, and in my opinion cleanest way of doing it. \
+PS. This way only works if you are using Python3.7+ (which is the case for this course). \
+```python
+first_name = "Karen"
+age = 34
+hobby = "asking for the manager"
+occupation = "stay at home mom"
 
+full_text = f"My name is {first_name} and I am {age} years old.\nMy hobby is {hobby}, and my occupation is being a {occupation}."
+
+print(full_text)
+# My name is Karen and I am 34 years old.
+# My hobby is asking for the manager, and my occupation is being a stay at home mom.
+```
+\
+The formatting starts by putting the letter `f` before the start of your string, this signifies to Python that you are writing a formatting string. \
+Every time you want to add a value (which is contained in a variable) into your string you need to enclose it in curly brackets `{}`. \
+This way Python knows that it must use the value stored in the variable. \
+\
+One last thing I added here was `\n`. This is treated as a special character in a string and represents a newline. \
+As you can see in the output (the comments), `print` actually printed 2 lines instead of just 1. \
+This is thanks to the `\n` character. Which basically means to put an `enter` there, so everything after it will be on a new line. \
+This can be very handy if you have a very long string, but want to show it to the user in multiple lines. \
+\
+[Exercises](Exercises.md)
+[Next lesson](../Lesson02)
