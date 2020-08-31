@@ -17,6 +17,7 @@ print("You made your very first script!!!")
 <details><summary><b>Hint</b></summary>
 
 Make sure you are in the correct directory. \
+This means, you need to be in the directory `Lesson01/Exercises/Exercise 1` inside the repo. \
 Use `cd <directory>` to move to a directory. \
 You can sue `cd ..` to go one directory up.
 
@@ -35,3 +36,18 @@ Create a python script. \
 Inside the script, create a variable which contains a name. \
 Then show the name to the user. 
 
+<details><summary><b>Hint</b></summary>
+
+A name is a string.
+
+</details>
+
+<details><summary><b>Answer</b></summary>
+
+```python
+name = "John F. Kennedy"
+
+print(name)
+```
+
+</details>
