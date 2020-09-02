@@ -103,7 +103,7 @@ Lastly make a new variable called `value`, this variable will contain:
  - the first number
  - times the third number
  - minus the fourth number
- - divided by the fifth number
+ - divided by the second number
 \
 Show this variable too. \
 \
@@ -131,7 +131,7 @@ print(second_number + fourth_number)
 print(third_number * fourth_number)
 print(first_number / third_number)
 
-value = (first_number * third_number - fourth_number) / fifth_number
+value = (first_number * third_number - fourth_number) / second_number
 
 print(value)
 ```
