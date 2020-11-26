@@ -18,3 +18,6 @@ Or else, you can pick one of the courses as you see fit.
 |[01](Lesson01/)| Writing our first python script (and using basic variables) |
 |[02](Lesson02/)| User input and if-statements (and code editors) |
 |[03](Lesson03/)| Lists and loops |
+
+
+Still work in progress
